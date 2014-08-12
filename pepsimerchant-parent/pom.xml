@@ -25,13 +25,20 @@
 						<target>${java.version</target>
 					</configuration>
 				</plugin>
-				
+
 				<plugin>
 					<groupId>external.atlassian.jgitflow</groupId>
 					<artifactId>jgitflow-maven-plugin</artifactId>
 					<version>1.0-m3</version>
 					<configuration>
-						<!-- see goals wiki page for configuration options -->
+						<flowInitContext>
+							<masterBranchName>master</masterBranchName>
+							<developBranchName>development</developBranchName>
+							<featureBranchPrefix>feature-</featureBranchPrefix>
+							<releaseBranchPrefix>release-</releaseBranchPrefix>
+							<hotfixBranchPrefix>hotfix-</hotfixBranchPrefix>
+							<versionTagPrefix>merchantVersion-</versionTagPrefix>
+						</flowInitContext>
 					</configuration>
 				</plugin>
 
@@ -85,7 +92,6 @@
 		<module>pepsimerchant-persist</module>
 		<module>pepsimerchant-services</module>
 		<module>pepsimerchant-agent</module>
-		<module>pepsimerchant-admin</module>
 	</modules>
 
 
