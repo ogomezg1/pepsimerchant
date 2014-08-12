@@ -25,6 +25,16 @@
 						<target>${java.version</target>
 					</configuration>
 				</plugin>
+				
+				<plugin>
+					<groupId>external.atlassian.jgitflow</groupId>
+					<artifactId>jgitflow-maven-plugin</artifactId>
+					<version>1.0-m3</version>
+					<configuration>
+						<!-- see goals wiki page for configuration options -->
+					</configuration>
+				</plugin>
+
 			</plugins>
 		</pluginManagement>
 	</build>
