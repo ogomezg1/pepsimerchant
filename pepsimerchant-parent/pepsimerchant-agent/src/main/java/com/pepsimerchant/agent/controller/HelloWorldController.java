@@ -12,6 +12,8 @@ public class HelloWorldController {
 	public String hello(
 			@RequestParam(value = "name", required = false, defaultValue = "World") String name,
 			Model model) {
+		
+		int a = 2;
 		model.addAttribute("name", name);
 		return "agent";
 	}
