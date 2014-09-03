@@ -14,6 +14,7 @@ public class HelloWorldController {
 			Model model) {
 		
 		int a = 2;
+		int b = 3;
 		model.addAttribute("name", name);
 		return "agent";
 	}
